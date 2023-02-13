@@ -1,0 +1,14 @@
+.flexbox-12a {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-d-flexbox-12a {
+    background-color: lightblue;
+    width: 200px;
+}
+
+.second-d-flexbox-12a {
+    background-color: lightpink;
+    width: 75px;
+}

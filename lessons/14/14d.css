@@ -1,0 +1,58 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.body-14b {
+    height: 3000px;
+}
+
+.right-sidebar-14b {
+    background-color: green;
+    color: white;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+}
+
+.overlay-14d {
+    background-color: rgba(0,0,0,0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.message-modal-14d {
+    background-color: white;
+    font-family: Arial;
+    width: 300px;
+
+    border-radius:6px;
+
+    padding: 15px 15px;
+}
+
+.modal-title-14d {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.this-is-14d {
+    margin-bottom: 12px;
+}
+
+.button-14d {
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    /*text-decoration: underline;*/
+    /* ^тут ми вчимо прикол того, шо молодші класи
+    наслідують особливості старших класів коли це стосується
+    тексту*/
+    /*inheritance*/
+    /* border: 2px solid red; */
+    /*решта властивостей не розповсюджується*/
+}
+
+/*код шоб відео ставали по 2-4 в ряд залежно від
+ширини вебсторінки в браузері*/
+/*нова фіча*/
+@media (max-width: 870px) {
+    /*css that will only activate when
+     screen size is <=600px*/
+
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 871px) and (max-width: 1099px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-info-grid { /*Після цього зникає місце
+між inline-block-ами*/
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip-channel-container {
+    width: 200px;
+    padding: 12px 12px;
+
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 56px;
+    z-index: 300;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.15s;
+}
+
+.profile-picture-container:hover .tooltip-channel-container {
+    opacity: 1;
+}
+
+.tooltip-profile-picture {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 24px;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin-right: 8px;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 18px;
+}
+
+.tooltip-channel-name {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.tooltip-channel-subscribers {
+    color: rgb(96, 96, 96) ;
+    font-size: 12px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-time {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    padding: 4px 4px;
+
+    border-radius: 2px;
+
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,32 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flexbox-13b {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+}
+
+.first-box-13b {
+    background-color: lightpink;
+    width: 100px;
+}
+
+.second-box-13b {
+    background-color: lightblue;
+    width: 200px;
+}
+
+.second-row-13b {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.row2-13b {
+    background-color: black;
+    color: white;
+}

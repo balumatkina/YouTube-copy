@@ -1,0 +1,66 @@
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.div-9f {
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.cat-img-9f {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.name-9f {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.mutual-friends-row {
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.dog-little-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+
+    margin-right: 4px;
+
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.paragraph-9f {
+    color: #606060;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-9f {
+    background-color: #2b6ada;
+    color: white;
+
+    font-size: 14px;
+
+    border: none;
+    border-radius: 4px;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    padding: 10px 24px;
+
+    cursor: pointer;
+}

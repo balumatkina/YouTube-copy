@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    width: 72px;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+
+    z-index: 200; /*бо має перекривати хедер*/
+    padding-top: 5px;
+}
+
+.sidebar-link {
+    height: 74px;
+
+    display: flex;
+    flex-direction: column;
+    /*наступні команди міняються впливом між собою
+    якщо вказуеться колумн*/
+    justify-content: center; /*horizontal centering*/
+    align-items: center; /*vertical centering*/
+}
+
+.sidebar-link:hover {
+    background-color: rgb(235,235,235);
+    cursor: pointer;
+}
+
+/*новенька штучка як таргетити елементи*/
+/*all images inside sidebar-link*/
+.sidebar-link img {
+    height: 26px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link p {
+    font-size: 10px;
+}
+

@@ -1,0 +1,100 @@
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+.flexbox-13f {
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+
+    padding: 8px 14px;
+
+    font-family: Arial;
+/**/
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.picture-column-13f {
+    margin-right: 10px;
+}
+
+.image-icon-13f {
+    width: 50px;
+    height: 50px;
+
+    object-position: center;
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+.text-info-13f {
+    flex: 1;
+}
+
+.nickname-tag-13f {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+
+    align-items: center;
+}
+
+.nickname-13f {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.tag-13f {
+    color: rgb(111, 111, 111);
+}
+
+.texts-13f {
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.bottom-link-view-13f {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    overflow: hidden; /*оце шось нове*/
+}
+
+.video-preview-13f {
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(220, 220, 220);
+
+    margin-right: 10px;
+}
+
+.video-data-13f {
+    flex: 1;
+}
+
+.site-name-13f {
+    color: rgb(111, 111, 111);
+    margin-bottom: 3px;
+}
+
+.video-name-13f {
+    line-height: 22px;
+}
+
+

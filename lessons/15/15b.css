@@ -1,0 +1,55 @@
+body {
+    height: 3000px;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.stuck-box-15b {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: gray;
+    width: 320px;
+    height: 140px;
+}
+
+.close-button-15b {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+
+    /* justify-content: center;*/
+     align-items: center;
+}
+
+.the-close-button-15b {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.time-data-15b {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    background-color: black;
+    color: white;
+
+    font-family: Arial;
+    font-size: 14px;
+
+    padding: 4px 6px;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <link rel="stylesheet"
+        href="flexbox.css">
+  <title>flexbox</title>
+</head>
+<body style="padding-bottom: 500px">
+
+<div style="display: flex;
+    flex-direction: row;
+    /*воно бере менше місця ніж в гріді*/
+    margin-bottom: 30px;">
+  <!--і гріду, і флексбоксу
+  потрібен один великий контейнер шо буде в собі тримати
+  цю розміточку-->
+  <div class="first-d-flexbox">div 1 text</div>
+  <div class="second-d-flexbox">div 2
+  <p>
+    text
+  </p>
+  </div>
+</div>
+
+<div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;">
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="second-d-flexbox"
+  style="flex: 1">flex 1</div>
+  <!--еквівалент до 1fr в гріді-->
+</div>
+
+<div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;">
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="second-d-flexbox"
+       style="flex: 1">flex 1</div>
+  <div class="first-d-flexbox"
+       style="flex: 2">flex 2</div>
+</div>
+
+<!--різниці:
+в гріді прописуються деталі колонок в головному діві
+для гріда, тому розклад (лейаут) не зміниться
+якщо ми поміняємо якісь з дівів, що мають бути стовпцями,
+місцями. в флексбоксі при зміні місць дівів
+БУДЕ змінюватись лейаут бо особливості розмірів
+дівів прописуються саме на кожен дів-стовпець
+індивідуально
+grid: rigid layout
+flexbox: flexible layout-->
+
+<div style="display: flex;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    /*визначає розміщення об'єктів в флексбоксі*/
+    justify-content: center;
+    /**/
+    flex-direction: row;
+    margin-bottom: 30px;">
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="second-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+</div>
+
+<div style="display: flex;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: space-between;
+    /*однакова відстань між об'єктами*/
+    flex-direction: row;
+    margin-bottom: 30px;">
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="second-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+</div>
+
+<div style="display: flex;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    /*вертикальне розміщення (по всьому контейнеру
+    розтягується, зверху, знизу, по центру)*/
+    flex-direction: row;
+    margin-bottom: 30px;">
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="second-d-flexbox"
+       style="width: 100px">100px</div>
+  <div class="first-d-flexbox"
+       style="width: 100px">100px</div>
+</div>
+
+<!--з грідом ми концентруємось
+на чіткому патерні розміщення стовпців
+а з флексбоксом - на відстанях між стовпцями, які можуть
+варіюватись як тобі дупа заграє-->
+
+</body>
+</html>

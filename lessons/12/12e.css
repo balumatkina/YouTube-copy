@@ -1,0 +1,36 @@
+div {
+    font-family: Arial;
+}
+
+p {
+    margin: 0;
+}
+
+.form-12e {
+    width: 350px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-radius: 6px;
+}
+
+.form-block-12e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.form-notification-12e {
+    background-color: #2b6ada;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    padding: 4px 12px;
+}

@@ -1,0 +1,44 @@
+.header-12f {
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(120, 82, 178);
+    color: white;
+
+    padding: 0 10px;
+}
+
+.home-12f {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.input-12f {
+    border: none;
+    border-radius: 50px;
+
+    width: 500px;
+
+    padding: 8px 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.download-button-12f {
+    background-color: rgb(120, 82, 178);
+    color: white;
+
+    padding: 6px 12px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+p {
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.model-6d {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.order-6d {
+    font-size: 12px;
+}
+
+.link-6d {
+    color: black;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3a</title>
+
+  <style>
+
+      .request-now-button {
+          /*width: 115px;*/
+          /*height: 34px;*/
+
+          padding: 8px 16px;
+
+          background-color: black;
+
+          color: white;
+
+          cursor: pointer;
+
+          transition: opacity 0.3s;
+      }
+
+      .request-now-button:hover {
+          opacity: 0.8;
+      }
+
+      .add-to-cart-button {
+          /*width: 170px;
+          height: 30px;*/
+
+          padding: 7px 53px;
+
+          background-color: rgb(255,216,20);
+
+          border: none;
+          border-radius: 15px;
+
+          cursor: pointer;
+
+          transition: background-color 0.3s;
+      }
+
+      .add-to-cart-button:hover {
+          background-color: #E5C11AFF;
+      }
+
+      .sign-up-button {
+          /*width: 100px;
+          height: 38px;*/
+
+          padding: 11px 23px;
+
+          color: white;
+
+          background-color: rgb(46,164,79);
+
+          border: none;
+          border-radius: 6px;
+
+          font-weight: bold;
+          font-size: 15px;
+
+          cursor: pointer;
+
+          transition: box-shadow 0.15s;
+      }
+
+      .sign-up-button:hover {
+          box-shadow: 0 6px 6px rgba(0,0,0,0.08);
+      }
+
+      .get-started-button {
+          /* width: 115px;
+           height: 34px;*/
+
+          padding: 10px 23px;
+
+          color: white;
+          background-color: rgb(121,82,179);
+
+          border: none;
+          border-radius: 3px;
+
+          font-weight: bold;
+
+          cursor: pointer;
+
+          margin-right: 8px;
+
+          transition: background-color 0.2s;
+      }
+
+      .get-started-button:hover {
+          background-color: #673D96FF;
+      }
+
+      .download-button {
+          /* width: 115px;
+           height: 34px;*/
+
+          padding: 9px 23px;
+
+          color: rgb(108,117,125);
+          background-color: white;
+          border: 1px solid rgb(108,117,125);
+          /*border-width: 1px;*/ /*changed by 1 line*/
+          /*border-style: solid;*/
+          /*border-color: rgb(108,117,125);*/
+          border-radius: 4px;
+          font-weight: bold;
+          cursor: pointer;
+
+          transition: background-color 0.2s;
+          /*без color краще*/
+      }
+
+      .download-button:hover {
+          color: white;
+          background-color: rgb(108,117,125);
+      }
+
+      .apply-button {
+          /*width: 216px;
+          height: 36px;*/
+
+          padding: 10px 26px;
+
+          color: white;
+
+          border: none;
+          border-radius: 18px;
+
+          background-color: rgb(10,102,194);
+
+          font-weight: bold;
+
+          cursor: pointer;
+
+          transition: background-color 0.2s;
+      }
+
+      .apply-button:hover {
+          background-color: #003670FF;
+      }
+
+      .save-button {
+          /*width: 76px;
+          height: 36px;*/
+
+          padding: 9px 26px;
+
+          color: rgb(10,102,194);
+
+          border: 1px solid rgb(10,102,194);
+          border-radius: 18px;
+
+          background-color: white;
+
+          font-weight: bold;
+
+          cursor: pointer;
+
+          transition: background-color 0.2s;
+      }
+
+      .save-button:hover {
+          background-color: #e6e7ea;
+          border-width: 2px;
+      }
+
+      /*extra*/
+      .amazon-link {
+          color: rgb(0,113,133);
+
+          transition: color 0.15s;
+      }
+
+      .amazon-link:hover {
+          color: #BE1E1EFF;
+      }
+
+
+      .nike-black-paragraph {
+          font-weight: bold;
+          font-size: 24px;
+      }
+
+      .price-paragraph {
+          color: rgb(0,118,0);
+
+          font-weight: bold;
+      }
+
+      .challenge-add-to-cart-button {
+          /* width: 108px;
+           height: 28px;*/
+
+          padding: 7px 24px;
+
+          border: none;
+          border-radius: 14px;
+
+          background-color: rgb(255,216,20);
+
+          margin-right: 8px;
+
+          cursor: pointer;
+
+          transition: background-color 0.15s, opacity 0.15s;
+      }
+
+      .challenge-add-to-cart-button:hover {
+          background-color: #DEBF14FF;
+      }
+
+      .challenge-add-to-cart-button:active {
+          opacity: 0.6;
+      }
+
+      .challenge-buy-now-button {
+          /*width: 108px;
+          height: 28px;*/
+          /*краще для таких все таки юзати висоту і ширину*/
+
+          padding: 7px 34px;
+
+          border: none;
+          border-radius: 14px;
+
+          background-color: rgb(255,164,28);
+
+          cursor: pointer;
+
+          transition: background-color 0.15s, opacity 0.15s;
+      }
+
+      .challenge-buy-now-button:hover {
+          background-color: #E8971AFF;
+      }
+
+      .challenge-buy-now-button:active {
+          opacity: 0.6;
+      }
+  </style>
+</head>
+<body>
+
+
+
+<!--2a-->
+<button class="request-now-button">
+  Request now
+</button>
+<p></p>
+<!--2b-->
+<button class="add-to-cart-button">
+  Add to Cart
+</button>
+<p></p>
+<!--2c-->
+<button class="sign-up-button">
+  Sign up
+</button>
+<p></p>
+<!--2d-->
+<button class="get-started-button">
+  Get started
+</button>
+<button class="download-button">
+  Download
+</button>
+<p></p>
+<!--2e-->
+<button class="apply-button">
+  Apply on company website
+</button>
+<button class="save-button">
+  Save
+</button>
+<p></p>
+<!--2f-->
+<a href="http://amazon.com" target="_blank" class="amazon-link">Back to Amazon</a>
+<p class="nike-black-paragraph">Nike Black Running Shoes</p>
+<p class="price-paragraph">$39 - in stock.</p>
+<p>Free delivery tomorrow.</p>
+<button class="challenge-add-to-cart-button">
+  Add to Cart
+</button>
+<button class="challenge-buy-now-button">
+  Buy now
+</button>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+
+  <title>position</title>
+</head>
+<body style="height: 3000px">
+
+<div style="
+background-color: black;
+color: white;
+position: fixed;
+/*фіксує положення хедеру там де він є,
+але воно може перегороджувати деякий контент
+і не вважається таковим шо займає якесь місце на сайті,
+просто оверлеєм стає*/
+top: 10px;
+/*штука шоб визначати кількість відступу
+від верхньої границі до оверлея*/
+left: 50px;
+/*сейм штука, bottom, right*/
+right: 50px;
+/*після вказування правої сторони елемент розтягується
+так, щоб від правого краю було 50 пікселів*/
+bottom: 100px;
+/*теж розтягується*/
+
+
+
+">
+  header
+</div>
+
+<div style="
+background-color: lightblue;
+height: 200px;
+width: 200px;
+position: static;
+/*те ж саме шо не мати цієї лінії взагалі*/">
+  div1
+</div>
+<div style="background-color: lightpink;
+height: 200px;
+width: 200px;">
+  div2
+</div>
+
+</body>
+</html>

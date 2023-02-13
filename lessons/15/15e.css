@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 500px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cloth-sell-15e {
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 6px;
+
+   /* border-width: 1px;
+    border-color: black;
+    border-style: solid;*/
+}
+
+.image-of-the-cloth {
+    width: 300px;
+    height: 300px;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.discount-data-15e {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    background-color: black;
+    color: white;
+
+    font-family: Arial;
+
+    padding: 8px 16px;
+}
+
+.bottom-section-15f {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-add-to-cart-15f {
+    background-color: white;
+
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
+    padding: 6px 14px;
+
+    cursor: pointer;
+}

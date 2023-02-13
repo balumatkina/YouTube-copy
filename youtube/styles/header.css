@@ -1,0 +1,224 @@
+.header {
+    height: 56px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    /*однакова відстань між блоками*/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    border-bottom-width: 1px;
+    /*нова хрінь*/
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228,228,228);
+
+    z-index: 100;
+
+}
+
+/*не змінює розміри по зміні ширини сторінки
+фіксована ширина*/
+.left-section {
+    /*background-color: lightblue;*/
+    align-items: center; /*ця штука не працювала
+    бо всередині флексбоксу header треба було
+    зробити left-section теж флексбоксом, а було
+    дівом звичайним
+    тобто існують різні рівні флексбоксів і це ок
+    писати флексбокс в флексбоксі*/
+    display: flex;
+}
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+/*змінює розміри по зміні ширини сторінки
+НЕ фіксована ширина*/
+.middle-section {
+    flex: 1;
+   /* background-color: lightpink;*/
+
+    max-width: 500px;
+
+    margin-left: 70px;
+    margin-right: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+
+   /* border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);*/
+
+    border: 1px solid rgb(192,192,192);
+    border-radius: 2px;
+
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+
+    width: 0;
+    /*шоб пошукова строка максимально зменшувалась*/
+}
+
+.search-bar::placeholder {
+    font-size: 14px;
+}
+
+.search-icon {
+    height: 24px;
+    margin-top: 4px;
+}
+
+.search-button {
+    height: 40px;
+    width: 66px;
+
+    background-color: rgb(240,240,240);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+
+    margin-left: -1px;
+    /*NEGATIVE MARGIN YOUHOOO*/
+    margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-container{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*тултіп лише всередині сьорча*/
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-container .tooltip{
+    position: absolute;
+    bottom: -32px;
+
+    background-color: gray;
+    color: white;
+
+    padding: 6px 8px;
+
+    border-radius: 2px;
+
+    font-size: 12px;
+
+    opacity: 0; /*це як зробити появу при наводженні*/
+    transition: opacity 0.1s;
+
+    pointer-events: none;
+    /*робимо так шоб при наводженні на зону тултіп не
+    виникало оце віконце сьорч, а лише при наводженні на батон*/
+
+    white-space: nowrap;
+    /*prevents text from wrapping around*/
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-container:hover .tooltip{
+    /*тагретимо тултіп лише коли наводимось на сьорчбатон*/
+    opacity: 1;
+}
+
+.voice-search-icon {
+    height: 24px;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 20px;
+    border: none;
+
+    background-color: rgb(248,248,248);
+}
+
+/*не змінює розміри по зміні ширини сторінки
+фіксована ширина*/
+.right-section {
+    /*background-color: lightgreen;*/
+    width: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+
+    /*по проекту в нас іконки не повинні рухатись зі
+    зменшенням ширини сторінки, юзаємо наступне*/
+    flex-shrink: 0;
+    /*вирубає зменшення і збільшення відстаней між
+    іконками, тримає їх однаковими за будь-яких умов*/
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -2px;
+    /*МОЖНА ЮЗАТИ ВІД'ЄМНЕ*/
+    right: -5px;
+
+    background-color: #c60002;
+    color: white;
+
+    font-size: 11px;
+
+    padding: 2px 5px;
+
+    border-radius: 20px;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
+}
